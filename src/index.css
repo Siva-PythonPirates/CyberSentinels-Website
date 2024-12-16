@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    text-shadow: -2px 0 #0f0, 2px 2px #f00;
+  }
+  25% {
+    transform: translate(-2px, 2px);
+    text-shadow: 2px -2px #0f0, -2px -2px #f00;
+  }
+  50% {
+    transform: translate(2px, -2px);
+    text-shadow: 2px 0 #0f0, -2px 2px #f00;
+  }
+  75% {
+    transform: translate(-2px, -2px);
+    text-shadow: -2px 2px #0f0, 2px -2px #f00;
+  }
+  100% {
+    transform: translate(0);
+    text-shadow: -2px 0 #0f0, 2px 2px #f00;
+  }
+}
+
+.animate-glitch {
+  animation: glitch 1s infinite;
+}
+
+/* Matrix Rain Effect */
+@keyframes matrix {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.matrix-rain span {
+  color: #0f0;
+  font-family: monospace;
+  font-size: 1.2rem;
+  position: absolute;
+  animation: matrix 2s linear infinite;
+}
+
+/* Cyber Scanner Effect */
+@keyframes scan {
+  0% {
+    background-position: 0% -100%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
+.cyber-scan {
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-scan::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 0%,
+    rgba(74, 222, 128, 0.2) 50%,
+    transparent 100%
+  );
+  animation: scan 3s linear infinite;
+}
+
+/* Neon Glow */
+.neon-glow {
+  text-shadow: 
+    0 0 5px rgba(74, 222, 128, 0.5),
+    0 0 10px rgba(74, 222, 128, 0.5),
+    0 0 15px rgba(74, 222, 128, 0.5),
+    0 0 20px rgba(74, 222, 128, 0.5),
+    0 0 25px rgba(74, 222, 128, 0.5),
+    0 0 30px rgba(74, 222, 128, 0.5);
+}
+
+/* Digital Distortion */
+@keyframes distort {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    clip-path: inset(20% 0 0 0);
+  }
+  40% {
+    clip-path: inset(40% 0 60% 0);
+  }
+  60% {
+    clip-path: inset(60% 0 20% 0);
+  }
+  80% {
+    clip-path: inset(80% 0 40% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.digital-distortion {
+  position: relative;
+}
+
+.digital-distortion::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  text-shadow: 2px 0 #0f0;
+  animation: distort 3s infinite linear alternate-reverse;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-500/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-500;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
