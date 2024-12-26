@@ -16,11 +16,11 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-green-500 mr-3" />
-                <span className="text-gray-400">cybersentinels@university.edu</span>
+                <a href="mailto:cybersentinels@rajalakshmi.edu.in" className="text-gray-400">cybersentinels@rajalakshmi.edu.in</a>
               </div>
               <div className="flex items-center">
                 <MessageSquare className="w-5 h-5 text-green-500 mr-3" />
-                <span className="text-gray-400">Join our Discord community</span>
+                <span className="text-gray-400">Join our <a href='https://discord.gg/shFD9RDP' className='text-blue-600'>Discord</a> community</span>
               </div>
             </div>
 

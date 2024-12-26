@@ -1,62 +1,95 @@
 const team = [
   {
-    name: 'Sivashankar S',
-    role: 'Founder',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
+    name: "Sivashankar S",
+    role: "Founder",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "VAPT-er, Forensics Expert",
   },
   {
-    name: 'Rithesh',
-    role: 'Founder',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
+    name: "Rithesh S",
+    role: "Founder",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "VAPT-er, Reverse Engineering Expert",
   },
   {
-    name: 'Jerin',
-    role: 'Founder',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
+    name: "Jerin B S",
+    role: "Founder",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "VAPT-er, Forensics Expert",
   },
   {
-    name: 'Dr. Sarah Chen',
-    role: 'Faculty Advisor',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
+    name: "Subhikshaa S",
+    role: "Managerial Lead",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "Cryptography Expert",
   },
   {
-    name: 'Marcus Rodriguez',
-    role: 'Club President',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
+    name: "Swathi",
+    role: "Content Writer",
+    image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "Content Creator",
   },
   {
-    name: 'Aisha Patel',
-    role: 'Technical Lead',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200',
-    expertise: 'Fill in Team.tsx file'
-  }
+    name: "Shem Kumar",
+    role: "Website Manager",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "Cloud Expert",
+  },
+  {
+    name: "Sampathkumar",
+    role: "Website Manager",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "Cloud Expert",
+  },
+  {
+    name: "Harish D",
+    role: "Public Relations",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "CTF Player and PR Lead",
+  },
+  {
+    name: "Karan Balaji",
+    role: "Public Relations",
+    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "CTF Player",
+  },
+  {
+    name: "Surya Sundaram",
+    role: "Security Analyst",
+    image: "https://images.unsplash.com/photo-1519241047957-be31d7379a5d?auto=format&fit=crop&q=80&w=200&h=200",
+    expertise: "Penetration Testing and Security",
+  },
 ];
 
 export default function Team() {
   return (
-    <section id="team" className="py-24 relative">
+    <section
+      id="team"
+      className="py-24 relative bg-gradient-to-br from-black to-gray-900 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-green-500 font-mono mb-4">Our Team</h2>
-          <p className="text-gray-400">Meet the experts leading our cybersecurity initiatives</p>
+          <h2 className="text-4xl font-bold text-green-500 font-mono mb-4 animate-pulse">
+            Our Team
+          </h2>
+          <p className="text-gray-400">
+            Meet the experts leading our cybersecurity initiatives
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {team.map((member, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg bg-black border border-green-500/20 p-6
-                         hover:bg-green-500/5 transition-all duration-300"
+                         hover:bg-green-500/5 transition-all duration-300 shadow-lg transform hover:-translate-y-2 hover:scale-105"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-32 h-32 mb-6">
-                  <div className="absolute inset-0 rounded-full border-2 border-green-500/20 
-                                group-hover:border-green-500 transition-colors" />
+                  <div
+                    className="absolute inset-0 rounded-full border-2 border-green-500/20 
+                                group-hover:border-green-500 transition-colors animate-spin-slow"
+                  />
                   <img
                     src={member.image}
                     alt={member.name}
@@ -64,13 +97,22 @@ export default function Team() {
                   />
                 </div>
                 
-                <h3 className="text-xl font-bold text-white font-mono mb-2">{member.name}</h3>
-                <p className="text-green-500 font-mono mb-2">{member.role}</p>
-                <p className="text-gray-400">{member.expertise}</p>
+                <h3 className="text-xl font-bold text-green-500 font-mono mb-2">
+                  {member.name || "Name TBD"}
+                </h3>
+                <p className="text-white font-mono mb-2">{member.role}</p>
+                {/* <p className="text-gray-400">{member.expertise}</p> */}
+                {/* venuna un-comment pannikonga */}
               </div>
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="absolute inset-0 pointer-events-none z-[-1]">
+        {/* Cybersecurity-themed floating animation */}
+        <div className="absolute top-0 left-0 w-48 h-48 bg-green-500 opacity-10 rounded-full blur-3xl animate-ping"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-green-500 opacity-10 rounded-full blur-3xl animate-ping delay-300"></div>
       </div>
     </section>
   );
