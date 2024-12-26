@@ -101,7 +101,7 @@ export default function Team() {
                   {member.name || "Name TBD"}
                 </h3>
                 <p className="text-white font-mono mb-2">{member.role}</p>
-                {/* <p className="text-gray-400">{member.expertise}</p> */}
+                <p className="text-gray-400">{member.expertise}</p>
                 {/* venuna un-comment pannikonga */}
               </div>
             </div>
