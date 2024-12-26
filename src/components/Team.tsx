@@ -26,13 +26,13 @@ const team = [
   {
     name: "Swathi",
     role: "Content Writer",
-    image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
     expertise: "Content Creator",
   },
   {
     name: "Shem Kumar",
     role: "Website Manager",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
     expertise: "Cloud Expert",
   },
   {
@@ -44,19 +44,19 @@ const team = [
   {
     name: "Harish D",
     role: "Public Relations",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
     expertise: "CTF Player and PR Lead",
   },
   {
     name: "Karan Balaji",
     role: "Public Relations",
-    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
     expertise: "CTF Player",
   },
   {
     name: "Surya Sundaram",
     role: "Security Analyst",
-    image: "https://images.unsplash.com/photo-1519241047957-be31d7379a5d?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
     expertise: "Penetration Testing and Security",
   },
 ];
